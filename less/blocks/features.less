@@ -1,0 +1,157 @@
+.feature-image svg {
+	display: inline;
+}
+
+.feature {
+	position: relative;
+	padding-left: 70px;
+	padding-top: 35px;
+	margin-bottom: 0;
+	margin-top: -8px;
+
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.feature p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.feature-image {
+	position: absolute;
+	top: 25px;
+	left: 22px;
+}
+
+.feature .cancel {
+	display: none;
+}
+
+@media @mobile-widths {
+	.feature:nth-child(3) .feature-image {
+		top: 30px;
+		left: 19px;
+	}
+
+	.feature:nth-child(2) .feature-image {
+		left: 25px;
+	}
+
+	.feature:nth-child(n+2) {
+		margin-top: -5px;
+	}
+
+	.feature:last-child {
+		padding-bottom: 39px;
+	}
+
+	.feature:nth-child(1) svg {
+		width: 39px;
+		height: 37px;
+	}
+
+	.feature:nth-child(2) svg {
+		width: 32px;
+		height: 38px;
+	}
+
+	.feature:nth-child(3) svg {
+		width: 40px;
+		height: 35px;
+	}
+}
+
+@media @tablet-widths {
+	.features {
+		display: flex;
+		justify-content: space-around;
+		
+		min-height: 300px;
+	}
+
+	.feature {
+		/*display: block;
+		float: left;*/
+		flex-basis: 165px;
+		padding-left: 0;
+		
+		padding-top: 160px;
+		/*width: 165px;*/
+		
+		text-align: center;
+	}
+	
+	.feature:first-child {
+		margin-left: -4px;
+	}
+
+	.feature:nth-child(2) {
+		order: 3;
+		margin-right: -10px;
+	}
+
+	/*.feature:nth-child(n+2) {
+		margin-left: 40px;
+		margin-top: -8px;
+	}*/
+
+	.feature-image {
+		top: 61px;
+		left: 45px;
+	}
+
+	.feature:nth-child(1) svg {
+		width: 75px;
+		height: 72px;
+	}
+
+	.feature:nth-child(2) svg {
+		width: 74px;
+		height: 70px;
+	}
+
+	.feature:nth-child(3) svg {
+		width: 77px;
+		height: 68px;
+	}
+}
+
+@media @desktop-widths {
+	.features {
+		background-color: #fff;
+	}
+
+	.feature {
+		flex-basis: 290px;
+	}	
+
+	.feature:first-child {
+		margin-left: -6px;
+	}
+
+	.feature:nth-child(2) {
+		margin-right: -10px;
+	}
+
+	.feature-image {
+		top: 61px;
+		left: 110px;
+	}
+
+	.feature:nth-child(3) .feature-image {
+		left: 105px;
+	}
+
+	.feature:nth-child(2) .feature-image {
+		left: 108px;
+	}
+
+	.feature .cancel {
+		display: inline;
+	}
+}

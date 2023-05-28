@@ -1,0 +1,15 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Andrei Ku",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.1.3",
+    "less-compiler": "^0.2.4"
+  }
+}

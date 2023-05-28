@@ -1,0 +1,168 @@
+.reasons {
+	text-align: center;
+	text-transform: uppercase;
+
+	background-color: #fff;
+}
+
+.reasons h2 {
+	margin-top: 38px;
+
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.reasons p {
+	margin-top: 25px;
+
+	font-size: 16px;
+}
+
+.reason-left {
+	position: relative;
+
+	margin-top: 25px;
+
+	color: #fff;
+	background-color: #81b3d2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+
+		width: 0;
+		height: 0;
+
+		border: 15px solid transparent;
+		border-left: 160px solid transparent;
+		border-right: 160px solid transparent;
+		border-top-color: #fff;
+		/*border-right-color: #fff;*/		
+
+		background-color: #81b3d2;
+
+		/*transform: rotate(135deg);*/
+	}
+}
+
+.reason-left h3 {
+	padding-top: 55px;
+	margin-bottom: 5px;
+
+	font-size: 20px;
+}
+
+.reason-left span {
+	font-size: 14px;
+}
+
+.reason-left p {
+	margin-top: 7px;
+	padding-bottom: 37px;
+	font-size: 13px;
+}
+
+
+@media @mobile-widths {
+	.reasons .cancel__2 {
+		display: none;
+	}
+
+	.reason-left h3 .cancel {
+		display: none;
+	}
+
+	.reason-left p .cancel {
+		display: none;
+	}
+
+	.reason-picture {
+		margin-top: -13px;
+	}
+}
+
+@media @tablet-widths {
+	.reasons header .cancel {
+		display: none;
+	}
+
+	.reasons h2 {
+		margin-top: 47px;
+		padding-left: 20px;
+
+		font-size: 22px;
+	}
+
+	.reasons header p {
+		margin-top: 30px;
+		padding-left: 20px;
+	}
+
+	.reason-discr {
+		.clearfix();
+		margin-top: 25px;
+	}
+
+	.reason-left {
+		position: static;
+		float: left;
+
+		box-sizing: border-box;
+		width: 256px;
+
+
+		&::before {	
+			display: none;
+		}
+	}
+
+	.reason-left h3 {
+		padding-top: 22px;
+		padding-left: 10px;
+		padding-bottom: 0;
+		margin-bottom: 5px;
+
+		font-size: 22px;
+	}
+
+	.reason-left p {
+		padding-top: 0;
+		padding-bottom: 22px;
+		margin-top: 0;
+
+		font-size: 16px;
+	}
+
+	.reason-picture {
+		float: right;
+
+		margin-top: 25px;
+	}
+}
+
+@media @desktop-widths {
+	.reasons {
+		padding-top: 5px;
+		background-color: #fff;
+	}
+
+	.reason-left {
+		width: 400px;
+	}
+
+	.reason-left h3 {
+		padding-top: 30px;
+	}
+
+	.reason-left p .cancel {
+		display: none;
+	}
+
+	.reason-left p {
+		padding-top: 14px;
+		padding-bottom: 27.5px;
+	}
+}

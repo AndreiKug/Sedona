@@ -1,0 +1,98 @@
+.hostel-find {
+	padding-bottom: 50px;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hostel-find b {
+	display: block;
+	margin-top: 27px;
+	margin-bottom: 20px;
+
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.hostel-find p {
+	padding-bottom: 22px;
+
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.hostel-find .btn {
+	display: block;
+	box-sizing: border-box;
+	width: 280px;
+	height: 58px;
+	padding-top: 15px;
+	margin: 0 auto;
+
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 21px;
+	
+	background: #81b3d2;
+	color: #fff;
+
+	animation-name: color;
+	animation-duration: 700ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	&:hover {
+		background-color: #669ec0;
+		animation-duration: 0ms;
+	}
+
+	&:active {
+		background-color: #5496bd;
+		color: #88b6d1;
+		animation-duration: 0ms;
+	}
+
+	&.disabled {
+		background-color: #e5e5e5;
+		animation-duration: 0ms;
+	}
+} 
+
+@media @mobile-widths {
+	.hostel-find p .cancel:nth-child(2) {
+		display: none;
+	}
+}
+
+@media @tablet-widths {
+	.hostel-find {
+		padding-bottom: 58px;
+	}
+
+	.hostel-find b {
+		margin-top: 55px;
+		font-size: 30px;
+	}
+
+	.hostel-find p .cancel:nth-child(1) {
+		display: none;
+	}
+
+	.hostel-find .btn {
+		width: 458px;
+	}
+
+	.hostel-find p {
+		padding-bottom: 27px;
+	}
+}
+
+@media @desktop-widths {
+	.hostel-find b {
+		margin-bottom: 30px;
+	}
+
+	.hostel-find p {
+		padding-bottom: 33px;
+	}
+}

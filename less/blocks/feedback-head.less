@@ -1,0 +1,37 @@
+.feedback-head {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.feedback-head h1 {
+	padding-top: 25px;
+	padding-bottom: 10px;
+
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.feedback-head p {
+	padding-bottom: 5px;
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+@media @mobile-widths {
+	.feedback-head p .cancel {
+		display: none;
+	}
+
+	.feedback-head {
+		border-bottom: 1px solid #e5e5e5;
+	}
+}
+
+@media @tablet-widths {
+	.feedback-head h1 {
+		padding-top: 43px;
+
+		font-size: 32px;
+	}
+}
